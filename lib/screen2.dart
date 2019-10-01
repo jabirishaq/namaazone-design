@@ -97,9 +97,9 @@ class _Screen2State extends State<Screen2> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceAround,
                                 children: <Widget>[
-                                  Text("إشترك الآن ",
+                                  Text("تسجيل الدخول",
                                       style: TextStyle(
-                                        fontFamily: 'beINNormal',
+                                        fontFamily: 'bein-normal',//beINNormal
                                         color: Color(0xff434141),
                                         fontSize: 16,
                                         fontWeight: FontWeight.w400,
@@ -110,25 +110,52 @@ class _Screen2State extends State<Screen2> {
                                       height: 30,
                                       decoration: new BoxDecoration(
                                           color: Color(0x4d1a1a1a))),
-                                  Text("تسجيل الدخول",
+                                          Text("إشترك الآن ",
                                       style: TextStyle(
                                         fontFamily: 'beINNormal',
                                         color: Color(0xff434141),
                                         fontSize: 16,
                                         fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.normal,
-                                      ))
+                                      )),
+                                  
                                 ],
                               ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Container(
+                              Stack(
+                                children: <Widget>[
+                                  Positioned(
+                                    child: Container(
                                   // width: 324.62109375,
                                   height: 2,
                                   decoration: new BoxDecoration(
                                       border: Border.all(
-                                          color: Color(0x4d1a1a1a), width: 1)))
+                                          color: Color(0x4d1a1a1a), width: 1))),
+                                  ),
+                                  Positioned(
+                                    bottom:10,
+                                    top: 0.0,
+                                    left: 30.0,
+                                    child:  Container(
+                                      margin: EdgeInsets.only(bottom: 20),
+                                   width: 115.0,
+                                  // height: 5,
+                                  decoration: new BoxDecoration(
+                                      border: Border.all(
+                                          color: Color(0xff039be6), width: 2)))
+                                          
+                                    ),
+                                                                     
+                                ],
+                              ),
+                              // Container(
+                              //     // width: 324.62109375,
+                              //     height: 2,
+                              //     decoration: new BoxDecoration(
+                              //         border: Border.all(
+                              //             color: Color(0x4d1a1a1a), width: 1)))
                             ],
                           ),
                         ),
